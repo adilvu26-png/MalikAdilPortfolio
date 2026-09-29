@@ -1,0 +1,14 @@
+# Netlify deployment configuration.
+# Connect this repo in the Netlify dashboard (or run `netlify deploy`) and it
+# will pick these settings up automatically — no manual config needed.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Ensures client-side routing (if you add React Router later) doesn't 404
+# on a hard refresh of a non-root path. Harmless for a single-page site too.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
