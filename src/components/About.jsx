@@ -21,7 +21,7 @@ const TRAITS = [
 
 const STATS = [
   { value: '10+', label: 'Projects Built' },
-  { value: '8+', label: 'Months Learning & Building' },
+  { value: '1+', label: 'Years Learning & Building' },
   { value: '100%', label: 'Responsive Delivery' },
 ];
 
