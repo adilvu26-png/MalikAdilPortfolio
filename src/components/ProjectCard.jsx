@@ -17,13 +17,13 @@ export default function ProjectCard({ project, index = 0 }) {
       <TiltCard max={featured ? 3 : 6} className="rounded-2xl h-full">
         <article
           className={`spin-border group flex flex-col h-full bg-white/85 dark:bg-[#121826]/85 backdrop-blur-md border border-slate-200 dark:border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:border-transparent hover:shadow-xl hover:shadow-teal-500/10 ${
-            featured ? 'lg:flex-row' : ''
+            featured ? 'lg:flex-row lg:items-center' : ''
           }`}
         >
           {/* Thumbnail — real screenshot, or an animated generated cover if none yet */}
           <div
             className={`relative overflow-hidden bg-slate-100 dark:bg-white/5 ${
-              featured ? 'aspect-[16/10] lg:aspect-auto lg:w-[48%] lg:min-h-[300px]' : 'aspect-[16/10]'
+              featured ? 'aspect-[16/10] lg:w-[48%] lg:shrink-0' : 'aspect-[16/10]'
             }`}
           >
             {project.image ? (
