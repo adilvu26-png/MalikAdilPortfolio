@@ -10,6 +10,17 @@
 
 const projects = [
   {
+    id: 'stock-scribe-studio',
+    featured: true,
+    title: 'Stock Scribe Studio',
+    description:
+      'A website plus browser extension that helps Adobe Stock contributors add metadata to their uploaded content directly inside their contributor accounts — saving hours of repetitive manual work. Built with React JS, JavaScript and Firebase.',
+    tags: ['React JS', 'JavaScript', 'Firebase', 'Browser Extension'],
+    image: 'screenshots/stockscribe.png',
+    github: 'https://github.com/adilvu26-png/Stockscribe-studio', 
+    live: 'https://stockscribe-studio.netlify.app/', 
+  },
+  {
     id: 'expense-tracker',
     title: 'Expense Tracker Dashboard',
     description:

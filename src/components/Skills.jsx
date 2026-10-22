@@ -18,13 +18,13 @@ export default function Skills() {
             Skills
           </p>
           <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight">
-            The tools I build with
+            The <span className="text-flow">tools I build with</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
-          {skills.map((skill) => (
-            <SkillCard key={skill.id} skill={skill} />
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+          {skills.map((skill, index) => (
+            <SkillCard key={skill.id} skill={skill} index={index} />
           ))}
         </div>
       </div>

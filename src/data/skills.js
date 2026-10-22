@@ -9,6 +9,7 @@ const skills = [
   { id: 'css', icon: 'css', title: 'CSS3', tag: 'Responsive layouts & animation', level: 90 },
   { id: 'javascript', icon: 'javascript', title: 'JavaScript', tag: 'DOM, APIs & ES6+', level: 88 },
   { id: 'react', icon: 'react', title: 'React JS', tag: 'Components, hooks & state', level: 85 },
+  { id: 'firebase', icon: 'firebase', title: 'Firebase', tag: 'Auth, Firestore & hosting', level: 80 },
   { id: 'git', icon: 'git', title: 'Git & GitHub', tag: 'Version control & collaboration', level: 82 },
   { id: 'responsive', icon: 'responsive', title: 'Responsive Design', tag: 'Mobile-first, fluid layouts', level: 90 },
   { id: 'tailwind', icon: 'tailwind', title: 'Tailwind CSS', tag: 'Utility-first styling', level: 88 },

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { LinkedinIcon, GithubIcon, TwitterIcon, MailIcon } from './icons/index.jsx';
+import TiltCard from './TiltCard.jsx';
 import profileImage from "../assets/updated_picture.jpg";
 
 const ROLES = ['Frontend Developer', 'React.js Developer', 'UI Engineer', 'Creative Problem Solver'];
@@ -57,7 +58,7 @@ export default function Hero() {
 
           <h1 className="opacity-0 animate-fade-slide-up [animation-delay:200ms] font-display font-bold text-4xl sm:text-5xl md:text-6xl leading-[1.1] tracking-tight">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-teal-400 to-violet-400 bg-clip-text text-transparent">
+            <span className="text-flow">
               Malik Adil
             </span>
           </h1>
@@ -88,7 +89,7 @@ export default function Hero() {
           <div className="opacity-0 animate-fade-slide-up [animation-delay:700ms] flex flex-wrap justify-center md:justify-start gap-4 mt-8">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-lg bg-teal-500 text-slate-950 font-semibold px-6 py-3 text-sm transition-transform hover:-translate-y-0.5 hover:bg-teal-400"
+              className="btn-shine inline-flex items-center gap-2 rounded-lg bg-teal-500 text-slate-950 font-semibold px-6 py-3 text-sm transition-transform hover:-translate-y-0.5 hover:bg-teal-400"
             >
               View My Work
             </a>
@@ -140,17 +141,32 @@ export default function Hero() {
         </div>
 
         <div className="opacity-0 animate-fade-in [animation-delay:200ms] relative justify-self-center">
-          <div className="w-[220px] sm:w-[280px] md:w-[320px] aspect-square rounded-[32px] overflow-hidden border border-slate-200 dark:border-white/10 shadow-2xl relative">
-            {/* Replace with an actual photo of Malik Adil, e.g. src/assets/profile.jpg */}
-            <img
-              src={profileImage}
-              alt="Portrait of Malik Adil, Frontend Developer"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="absolute -bottom-4 -left-4 bg-white dark:bg-[#121826] border border-slate-200 dark:border-white/10 rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-lg font-mono text-xs">
-            <span className="w-2 h-2 rounded-full bg-teal-400 shadow-[0_0_0_4px_rgba(45,212,191,0.25)]"></span>
-            Open to new projects
+          <div className="animate-float relative">
+            {/* Orbiting particles */}
+            <div className="animate-orbit absolute -inset-8 rounded-full pointer-events-none" aria-hidden="true">
+              <span className="absolute left-1/2 top-0 -ml-1.5 w-3 h-3 rounded-full bg-teal-400 shadow-[0_0_18px_#2dd4bf]"></span>
+            </div>
+            <div className="animate-orbit-rev absolute -inset-14 rounded-full pointer-events-none" aria-hidden="true">
+              <span className="absolute left-1/2 bottom-0 -ml-1 w-2 h-2 rounded-full bg-violet-400 shadow-[0_0_14px_#a78bfa]"></span>
+            </div>
+
+            <TiltCard max={10} className="rounded-[32px]">
+              <div className="ring-glow absolute -inset-3 rounded-[40px] blur-2xl opacity-60" aria-hidden="true"></div>
+              <div className="ring-spin absolute -inset-[5px] rounded-[37px]" aria-hidden="true"></div>
+              <div className="w-[220px] sm:w-[280px] md:w-[320px] aspect-square rounded-[32px] overflow-hidden border border-slate-200 dark:border-white/10 shadow-2xl relative bg-slate-100 dark:bg-[#121826]">
+                {/* Replace with an actual photo of Malik Adil, e.g. src/assets/profile.jpg */}
+                <img
+                  src={profileImage}
+                  alt="Portrait of Malik Adil, Frontend Developer"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </TiltCard>
+
+            <div className="absolute -bottom-4 -left-4 bg-white dark:bg-[#121826] border border-slate-200 dark:border-white/10 rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-lg font-mono text-xs">
+              <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse-ring"></span>
+              Open to new projects
+            </div>
           </div>
         </div>
       </div>

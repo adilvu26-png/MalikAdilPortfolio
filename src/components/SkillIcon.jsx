@@ -40,6 +40,12 @@ export default function SkillIcon({ icon }) {
           <ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"></ellipse>
         </svg>
       );
+    case 'firebase':
+      return (
+        <svg viewBox="0 0 24 24" fill="#ffa000" className="w-6 h-6">
+          <path d="M3.89 15.673L6.255.461A.542.542 0 0 1 7.27.288L9.2 3.9l-5.31 11.773zm16.795 3.691L18.433 5.365a.543.543 0 0 0-.918-.295l-14.2 14.294 7.857 4.427a1.08 1.08 0 0 0 1.052 0l6.46-3.427zM14.722 7.238l-1.79-3.42a.542.542 0 0 0-.964 0L3.89 15.673z"></path>
+        </svg>
+      );
     case 'git':
       return (
         <svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
