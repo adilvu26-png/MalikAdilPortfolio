@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { LinkedinIcon, GithubIcon, TwitterIcon, MailIcon } from './icons/index.jsx';
-import profilePicture from "../assets/updated_picture.jpg";
+import profileImage from "../assets/updated_picture.jpg";
 
 const ROLES = ['Frontend Developer', 'React.js Developer', 'UI Engineer', 'Creative Problem Solver'];
 
